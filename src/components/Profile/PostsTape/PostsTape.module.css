@@ -1,0 +1,21 @@
+.addPost {
+    width: 90%;
+    margin: 20px auto 40px auto;
+    position: relative;
+}
+
+.addPost textarea {
+    width: 100%;
+    max-width: 750px;
+    max-height: 150px;
+    display: block;
+    margin-bottom: 12px;
+}
+
+.addPost button {
+    width: 100px;
+    display: block;
+    position: absolute;
+    right: 0;
+    margin-bottom: 20px;
+}

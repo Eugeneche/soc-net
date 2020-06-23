@@ -1,0 +1,10 @@
+.header {
+    min-height: 100px;
+    width: 100%;
+    background: #ffffff;
+}
+
+.header img {
+    width: 100%;
+    background-size: cover;
+}

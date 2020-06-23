@@ -1,0 +1,35 @@
+* {
+  color:#004e00;
+}
+
+.app {
+  background: #b8fab8;
+}
+
+.wrapper {
+  display: grid;
+
+  grid-template-areas: 
+  "sidebar content"
+  "sidebar content";
+
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 2fr 10fr;
+
+  max-width: 1000px;
+  margin: auto;
+  background: #e4ffe4;
+}
+
+.contentBlock {
+  grid-area: content;
+}
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,42 @@
+.sidebar {
+    grid-area: sidebar;
+    background: #cbffbe;
+  }
+
+li {
+    font-size: 1em;
+    list-style: none;
+    transition: all ease .5s;
+}
+
+li:hover {
+    font-weight: 600;
+    transition: all ease .5s;
+}
+
+a {
+    text-decoration: none;
+}
+
+.active {
+    color: rgb(128, 128, 128);
+    cursor: default;
+    position: relative;
+    right: 2px;
+    font-weight: 600;
+}
+
+.bold {
+    margin-top: 50px;
+    font-weight: 600;
+}
+
+/* friends block */
+
+.friend {
+    width: 30%;
+    margin: 0 1.666666666666667%;
+    float: left;  
+    text-align: center;
+    cursor: pointer;
+}
