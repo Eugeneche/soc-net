@@ -5,7 +5,7 @@ import * as serviceWorker from './serviceWorker';
 import { BrowserRouter } from 'react-router-dom';
 import './index.css';
 import store from './redux/reduxStore';
-import { Provider } from './StoreContext';
+import { Provider } from 'react-redux';
 
 
 const renderAll = (state) => {

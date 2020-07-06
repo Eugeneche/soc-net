@@ -6,8 +6,9 @@ let initialState = {
         {id: 4, name: 'Robert', avatarLink: 'https://cdn2.iconfinder.com/data/icons/proxima-2/256/user.png'},
       ],
       menu: [
-        {link: '/profile', page: 'Profile'},
+        {link: '/profile', page: 'Profile'},       
         {link: '/dialogs', page: 'Dialogs'},
+        {link: '/users', page: 'Users'},
         {link: '/news', page: 'News'},
         {link: '/music', page: 'Music'},
       ]

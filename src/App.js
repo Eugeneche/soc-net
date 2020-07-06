@@ -1,32 +1,33 @@
 import React from 'react';
+import { Route, Redirect } from 'react-router-dom';
 import './App.css';
 
 import MainHeader from './components/MainHeader/MainHeader';
 import SidebarContainer from './components/Sidebar/SidebarContainer';
 import Profile from './components/Profile/Profile';
 import DialogsContainer from './components/Dialogs/DialogsContainer';
+import UsersContainer from './components/Users/UsersContainer';
 import News from './components/News/News';
 import Settings from './components/Settings/Settings';
 import Music from './components/Music/Music';
 
-import {Route} from 'react-router-dom';
-import Main from './components/Main/Main';
+
 
 
 function App(props) {
-debugger;
   return (
-    <div className="app">
+    <div className='app'>
         <MainHeader />
-      <div className="wrapper">            
+      <div className='wrapper'>            
           <SidebarContainer />       
-        <div className="contentBlock">
+        <div className='contentBlock'>
 
-          <Route exact path='/' component={Main} />
+          <Route exact path='/' render={ () => <Redirect to='/profile' />} />
 
-          <Route path='/profile' render={ () => <Profile />} />
-
-          <Route path='/dialogs' render={ () => <DialogsContainer />} />
+          <Route exact path='/profile' render={ () => <Profile />} />
+          <Route exact path="/users" render={ () => <UsersContainer />} />
+ 
+          <Route exact path='/dialogs' render={ () => <DialogsContainer />} />
 
           <Route path='/news' render={ () => <News />} />
           <Route path='/music' render={ () => <Music />} />

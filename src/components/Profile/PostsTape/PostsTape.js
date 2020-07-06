@@ -3,7 +3,6 @@ import s from './PostsTape.module.css';
 import Post from './Post/Post';
 
 const PostsTape = (props) => {
-    
     const onAddPost = () => {
         props.addPost();
     }

@@ -1,0 +1,77 @@
+.userItem {
+    width: 95%;
+    margin: 5px auto;
+    background: #adffa3;
+    border-radius:  10px;
+}
+
+.userItem::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.avatar {
+    width: 100px;
+    height: 100px;
+    float: left;
+}
+
+.userPhoto {
+    width: 90px;
+    height: 90px;
+    margin: 5px;
+}
+
+.userInfo {
+    float: left;
+    background: #cbffbe;
+    width: calc(100% - 210px);
+    height: 90px;
+    margin: 5px 0;
+    border-radius: 10px;
+}
+
+.mane {
+    font-size: 18px;
+    font-weight: 600;
+    margin: 5px 10px;
+}
+
+.status {
+    font-size: 14px;
+    margin: 5px 10px;
+}
+
+.friendBlock {
+    float: left;
+    background: #cbffbe;
+    width: 100px;
+    height: 90px;
+    margin: 5px;
+    border-radius: 10px;
+    text-align: center;
+    position: relative;
+}
+
+.friendBlock button {
+    width: 80%;
+    display: block;
+    position: absolute;
+    bottom: 10px;
+    border-color: #004e00;
+    border-width: 1px;
+    outline: none;
+    cursor: pointer;
+    background: #adffa3;
+    border-radius: 5px;
+    margin: 5px 10px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+}
+
+.isFriend {
+    margin-top: 15px;
+}
+
