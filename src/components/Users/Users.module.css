@@ -11,6 +11,20 @@
     clear: both;
 }
 
+.pagination {
+    max-width: 833px;
+    margin: 10px;
+}
+
+.pagination span {
+    margin: 0 2px;
+    cursor: pointer;
+}
+
+.selected {
+    font-weight: bold;
+}
+
 .avatar {
     width: 100px;
     height: 100px;

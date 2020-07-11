@@ -22,7 +22,7 @@ function App(props) {
           <SidebarContainer />       
         <div className='contentBlock'>
 
-          <Route exact path='/' render={ () => <Redirect to='/profile' />} />
+          <Route exact path='/soc-net' render={ () => <Redirect to='/profile' />} />
 
           <Route exact path='/profile' render={ () => <Profile />} />
           <Route exact path="/users" render={ () => <UsersContainer />} />

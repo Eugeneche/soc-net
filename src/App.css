@@ -23,6 +23,7 @@
 
 .contentBlock {
   grid-area: content;
+  max-width: 834px;
 }
 
 
