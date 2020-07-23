@@ -12,22 +12,16 @@ const PostsTape = (props) => {
         props.changePostText(changedText);
     }    
 
-    return(
-        <div className={s.posts}>
+    return <>
             <div className={s.addPost}>
                 <textarea onChange={changePostText} value={props.writingPostText} placeholder=" create your new post" />
                 <button onClick={onAddPost}>Add post</button>
             </div>
 
             {props.posts.map(post => {
-                return(
-                    <Post key={post.id} post={post.postText} likes={post.likesCount} />
-                );
+                return <Post key={post.id} post={post.postText} likes={post.likesCount} />
             })}
-
-        </div>
-    )
-    
+    </>  
 }
 
 export default PostsTape;

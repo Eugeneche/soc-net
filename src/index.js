@@ -12,7 +12,7 @@ const renderAll = (state) => {
 
     ReactDOM.render(
       <React.StrictMode>
-        <BrowserRouter>
+        <BrowserRouter  basename="/soc-net">
           <Provider store={store}>
             <App />
           </Provider>
@@ -37,3 +37,4 @@ store.subscribe(() => {
 // unregister() to register() below. Note this comes with some pitfalls.
 // Learn more about service workers: https://bit.ly/CRA-PWA
 serviceWorker.unregister();
+

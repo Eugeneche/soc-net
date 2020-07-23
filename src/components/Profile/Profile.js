@@ -1,22 +1,17 @@
 import React from 'react';
-import Header from './Header/Header';
+import ProfileHeader from './ProfileHeader/ProfileHeader';
 import PostsTapeContainer from './PostsTape/PostsTapeContainer';
 
 const Profile = (props) => {
-
-   
-
-        return(
-            <div>
+    
+        return <>
                 <header>
-                    <Header />
+                    <ProfileHeader profile={props.profile} />
                 </header>
                 <main>
                     <PostsTapeContainer />  
                 </main>             
-            </div>
-        )
-    
+            </>  
 }
 
 export default Profile;
