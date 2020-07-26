@@ -12,7 +12,7 @@ const renderAll = (state) => {
 
     ReactDOM.render(
       <React.StrictMode>
-        <BrowserRouter>
+        <BrowserRouter basename={process.env.https://eugeneche.github.io/soc-net/}>
           <Provider store={store}>
             <App />
           </Provider>
