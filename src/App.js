@@ -25,7 +25,7 @@ function App(props) {
           <SidebarContainer />       
         <div className='contentBlock'>
 
-          <Route exact path='/' render={ () => <ProfileContainer />} />
+          <Route exact path='/' render={ () => <Main />} />
 
           <Route path='/profile/:userId?' render={ () => <ProfileContainer />} />
           <Route path="/users" render={ () => <UsersContainer />} />
