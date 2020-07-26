@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.css": "/static/css/main.deb77efc.chunk.css",
-    "main.js": "/static/js/main.aeb9fa39.chunk.js",
-    "main.js.map": "/static/js/main.aeb9fa39.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.9bf2c1aa.js",
-    "runtime-main.js.map": "/static/js/runtime-main.9bf2c1aa.js.map",
-    "static/js/2.c29bd24c.chunk.js": "/static/js/2.c29bd24c.chunk.js",
-    "static/js/2.c29bd24c.chunk.js.map": "/static/js/2.c29bd24c.chunk.js.map",
-    "index.html": "/index.html",
-    "precache-manifest.ff9b759d96ee5e5a8ab64f555cf36784.js": "/precache-manifest.ff9b759d96ee5e5a8ab64f555cf36784.js",
-    "service-worker.js": "/service-worker.js",
-    "static/css/main.deb77efc.chunk.css.map": "/static/css/main.deb77efc.chunk.css.map",
-    "static/js/2.c29bd24c.chunk.js.LICENSE.txt": "/static/js/2.c29bd24c.chunk.js.LICENSE.txt",
-    "static/media/looking_job.svg": "/static/media/looking_job.279e3c08.svg",
-    "static/media/not_looking_job.svg": "/static/media/not_looking_job.8a9ca1d2.svg",
-    "static/media/user_avatar.png": "/static/media/user_avatar.8d17db1b.png"
+    "main.css": "/soc-net/static/css/main.deb77efc.chunk.css",
+    "main.js": "/soc-net/static/js/main.dd04d497.chunk.js",
+    "main.js.map": "/soc-net/static/js/main.dd04d497.chunk.js.map",
+    "runtime-main.js": "/soc-net/static/js/runtime-main.635e479b.js",
+    "runtime-main.js.map": "/soc-net/static/js/runtime-main.635e479b.js.map",
+    "static/js/2.c29bd24c.chunk.js": "/soc-net/static/js/2.c29bd24c.chunk.js",
+    "static/js/2.c29bd24c.chunk.js.map": "/soc-net/static/js/2.c29bd24c.chunk.js.map",
+    "index.html": "/soc-net/index.html",
+    "precache-manifest.bf9eba1b9caa1b5c2817af063ab98f29.js": "/soc-net/precache-manifest.bf9eba1b9caa1b5c2817af063ab98f29.js",
+    "service-worker.js": "/soc-net/service-worker.js",
+    "static/css/main.deb77efc.chunk.css.map": "/soc-net/static/css/main.deb77efc.chunk.css.map",
+    "static/js/2.c29bd24c.chunk.js.LICENSE.txt": "/soc-net/static/js/2.c29bd24c.chunk.js.LICENSE.txt",
+    "static/media/looking_job.svg": "/soc-net/static/media/looking_job.279e3c08.svg",
+    "static/media/not_looking_job.svg": "/soc-net/static/media/not_looking_job.8a9ca1d2.svg",
+    "static/media/user_avatar.png": "/soc-net/static/media/user_avatar.8d17db1b.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.9bf2c1aa.js",
+    "static/js/runtime-main.635e479b.js",
     "static/js/2.c29bd24c.chunk.js",
     "static/css/main.deb77efc.chunk.css",
-    "static/js/main.aeb9fa39.chunk.js"
+    "static/js/main.dd04d497.chunk.js"
   ]
 }
