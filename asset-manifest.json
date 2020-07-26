@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/soc-net/static/css/main.deb77efc.chunk.css",
-    "main.js": "/soc-net/static/js/main.dd04d497.chunk.js",
-    "main.js.map": "/soc-net/static/js/main.dd04d497.chunk.js.map",
+    "main.js": "/soc-net/static/js/main.ba75f6e2.chunk.js",
+    "main.js.map": "/soc-net/static/js/main.ba75f6e2.chunk.js.map",
     "runtime-main.js": "/soc-net/static/js/runtime-main.635e479b.js",
     "runtime-main.js.map": "/soc-net/static/js/runtime-main.635e479b.js.map",
     "static/js/2.c29bd24c.chunk.js": "/soc-net/static/js/2.c29bd24c.chunk.js",
     "static/js/2.c29bd24c.chunk.js.map": "/soc-net/static/js/2.c29bd24c.chunk.js.map",
     "index.html": "/soc-net/index.html",
-    "precache-manifest.bf9eba1b9caa1b5c2817af063ab98f29.js": "/soc-net/precache-manifest.bf9eba1b9caa1b5c2817af063ab98f29.js",
+    "precache-manifest.07911a7e5757efab492f5f411110ff71.js": "/soc-net/precache-manifest.07911a7e5757efab492f5f411110ff71.js",
     "service-worker.js": "/soc-net/service-worker.js",
     "static/css/main.deb77efc.chunk.css.map": "/soc-net/static/css/main.deb77efc.chunk.css.map",
     "static/js/2.c29bd24c.chunk.js.LICENSE.txt": "/soc-net/static/js/2.c29bd24c.chunk.js.LICENSE.txt",
@@ -20,6 +20,6 @@
     "static/js/runtime-main.635e479b.js",
     "static/js/2.c29bd24c.chunk.js",
     "static/css/main.deb77efc.chunk.css",
-    "static/js/main.dd04d497.chunk.js"
+    "static/js/main.ba75f6e2.chunk.js"
   ]
 }
