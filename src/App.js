@@ -1,5 +1,5 @@
 import React from 'react';
-import { Route, Redirect } from 'react-router-dom';
+import { Route } from 'react-router-dom';
 import './App.css';
 
 import SidebarContainer from './components/Sidebar/SidebarContainer';
@@ -10,6 +10,8 @@ import News from './components/News/News';
 import Settings from './components/Settings/Settings';
 import Music from './components/Music/Music';
 import MainHeaderContainer from './components/MainHeader/MainHeaderContainer';
+import Main from './components/Main/Main';
+import Login from './components/Login/Login';
 
 
 
@@ -17,12 +19,13 @@ import MainHeaderContainer from './components/MainHeader/MainHeaderContainer';
 function App(props) {
   return (
     <div className='app'>
+        <Login />
         <MainHeaderContainer />
       <div className='wrapper'>            
           <SidebarContainer />       
         <div className='contentBlock'>
 
-          <Route exact path='/' render={ () => <Redirect to='/profile' />} />
+          <Route exact path='/' render={ () => <Main />} />
 
           <Route path='/profile/:userId?' render={ () => <ProfileContainer />} />
           <Route exact path="/users" render={ () => <UsersContainer />} />
