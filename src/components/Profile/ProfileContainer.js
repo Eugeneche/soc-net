@@ -11,7 +11,7 @@ class ProfileContainer extends React.Component {
 
         let userId = this.props.match.params.userId;
         if(!userId) {
-            userId = 2;
+            userId = this.props.authorizedUserId;
         }
         axios.get(`https://social-network.samuraijs.com/api/1.0/profile/${userId}`) 
         .then(response => {
@@ -25,7 +25,8 @@ class ProfileContainer extends React.Component {
 }
 
 const mapStateToProps = (state) => ({
-    userProfile: state.profilePage.userProfile
+    userProfile: state.profilePage.userProfile,
+    authorizedUserId: state.auth.userId
 });
 
 const WithUrlDataContainerComponent = withRouter(ProfileContainer);
