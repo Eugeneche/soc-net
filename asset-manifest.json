@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.css": "/soc-net/static/css/main.deb77efc.chunk.css",
-    "main.js": "/soc-net/static/js/main.ba75f6e2.chunk.js",
-    "main.js.map": "/soc-net/static/js/main.ba75f6e2.chunk.js.map",
+    "main.css": "/soc-net/static/css/main.aa6996b0.chunk.css",
+    "main.js": "/soc-net/static/js/main.b384c0a0.chunk.js",
+    "main.js.map": "/soc-net/static/js/main.b384c0a0.chunk.js.map",
     "runtime-main.js": "/soc-net/static/js/runtime-main.635e479b.js",
     "runtime-main.js.map": "/soc-net/static/js/runtime-main.635e479b.js.map",
-    "static/js/2.c29bd24c.chunk.js": "/soc-net/static/js/2.c29bd24c.chunk.js",
-    "static/js/2.c29bd24c.chunk.js.map": "/soc-net/static/js/2.c29bd24c.chunk.js.map",
+    "static/js/2.d9623f18.chunk.js": "/soc-net/static/js/2.d9623f18.chunk.js",
+    "static/js/2.d9623f18.chunk.js.map": "/soc-net/static/js/2.d9623f18.chunk.js.map",
     "index.html": "/soc-net/index.html",
-    "precache-manifest.07911a7e5757efab492f5f411110ff71.js": "/soc-net/precache-manifest.07911a7e5757efab492f5f411110ff71.js",
+    "precache-manifest.d950383e9decb2cb1ddd7fd7c09dc873.js": "/soc-net/precache-manifest.d950383e9decb2cb1ddd7fd7c09dc873.js",
     "service-worker.js": "/soc-net/service-worker.js",
-    "static/css/main.deb77efc.chunk.css.map": "/soc-net/static/css/main.deb77efc.chunk.css.map",
-    "static/js/2.c29bd24c.chunk.js.LICENSE.txt": "/soc-net/static/js/2.c29bd24c.chunk.js.LICENSE.txt",
-    "static/media/looking_job.svg": "/soc-net/static/media/looking_job.279e3c08.svg",
-    "static/media/not_looking_job.svg": "/soc-net/static/media/not_looking_job.8a9ca1d2.svg",
+    "static/css/main.aa6996b0.chunk.css.map": "/soc-net/static/css/main.aa6996b0.chunk.css.map",
+    "static/js/2.d9623f18.chunk.js.LICENSE.txt": "/soc-net/static/js/2.d9623f18.chunk.js.LICENSE.txt",
+    "static/media/looking_job.svg": "/soc-net/static/media/looking_job.0c569380.svg",
+    "static/media/not_looking_job.svg": "/soc-net/static/media/not_looking_job.d0c709f2.svg",
     "static/media/user_avatar.png": "/soc-net/static/media/user_avatar.8d17db1b.png"
   },
   "entrypoints": [
     "static/js/runtime-main.635e479b.js",
-    "static/js/2.c29bd24c.chunk.js",
-    "static/css/main.deb77efc.chunk.css",
-    "static/js/main.ba75f6e2.chunk.js"
+    "static/js/2.d9623f18.chunk.js",
+    "static/css/main.aa6996b0.chunk.css",
+    "static/js/main.b384c0a0.chunk.js"
   ]
 }
