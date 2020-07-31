@@ -9,14 +9,25 @@
     max-width: 1000px;
   }
 
+  .wrapper::after {
+    content: '';
+    display: block;
+    clear: both;
+  }
+
   .authBlock {
     float: right;
   }
 
   .userName {
-    float: right;
     line-height: 50px;
     margin-right: 5px;
     font-weight: 700;
     color: #f0fff0;
+  }
+
+  .avatar {
+    float: right; 
+    width: 25px;
+    margin: 12.5px;
   }

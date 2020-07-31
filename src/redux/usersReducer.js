@@ -24,7 +24,7 @@ export const toggleIsFetching = (isFetching) => ({type: TOGGLE_IS_FETCHING, isFe
 
 
 const usersReducer = (state = initialState, action) => {
-
+debugger;
     switch(action.type) {
         case LOAD_USERS:
             return {
