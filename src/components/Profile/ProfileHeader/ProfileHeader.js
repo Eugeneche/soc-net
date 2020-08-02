@@ -8,9 +8,9 @@ import userAvatar from '../../../img/user_avatar.png';
 
 const ProfileHeader = (props) => {
 
-/*     if(!props.profile) {
+     if(!props.profile) {
         return <Preloader />
-    } */
+    } 
     return <>
         <div className={styles.profileCover}>
             <img src="https://img.turne.com.ua/static/countries/c42/small/42_637145319768924795.jpg" alt="czech" />
