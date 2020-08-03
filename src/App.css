@@ -24,6 +24,7 @@
 .contentBlock {
   grid-area: content;
   max-width: 834px;
+  min-height: 93vh;
 }
 
 

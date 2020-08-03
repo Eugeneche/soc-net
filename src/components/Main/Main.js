@@ -1,9 +1,13 @@
 import React from 'react';
+import { usersAPI } from '../../API/API';
+import mainPicture from '../../img/main.jpg';
 
 const Main = () => {
 
+    usersAPI.getAuthMeData();
+
     return <>
-            <img src="http://s808.ru/pictures/czech_switzerland/czech_switzerland_001.jpg" alt="czech nature" />
+            <img src={mainPicture} alt="main" />
         </>
 }
 

@@ -85,6 +85,13 @@
     sans-serif;
 }
 
+button:disabled {
+    background: #f3f3f3;
+    color: #d1d1d1;
+    border: #d1d1d1;
+    cursor: default;
+}
+
 .isFriend {
     margin-top: 15px;
 }

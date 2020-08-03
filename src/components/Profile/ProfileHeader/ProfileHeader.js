@@ -3,18 +3,22 @@ import styles from './ProfileHeader.module.css';
 import Preloader from '../../commom/Preloader/Preloader';
 import looking from '../../../img/looking_job.svg';
 import notLooking from '../../../img/not_looking_job.svg';
-import userAvatar from '../../../img/user_avatar.png';
+import userAvatarPlaceholder from '../../../img/user_avatar_placeholder.png';
+import profileSheet from '../../../img/profile.jpg';
+import { usersAPI } from '../../../API/API';
 
 
 const ProfileHeader = (props) => {
 
-     if(!props.profile) {
+    usersAPI.getAuthMeData();
+    
+    if(!props.profile) {
         return <Preloader />
-    } 
+    }
     return <>
         <div className={styles.profileCover}>
-            <img src="https://img.turne.com.ua/static/countries/c42/small/42_637145319768924795.jpg" alt="czech" />
-            <img className={styles.profilePhoto} src={!props.profile.photos.small ? userAvatar : props.profile.photos.small} alt={'user ' + props.profile.userId + ' photo'} />
+            <img src={profileSheet} alt="czech" />
+            <img className={styles.profilePhoto} src={!props.profile.photos.small ? userAvatarPlaceholder : props.profile.photos.small} alt={'user ' + props.profile.userId + ' photo'} />
         </div>
 
         <div className={styles.profileStatus}>{props.profile.aboutMe}</div>

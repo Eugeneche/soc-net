@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './MainHeader.module.css';
 import { NavLink } from 'react-router-dom';
-import authUserAvatarPlaceholder from '../../img/user_avatar.png';
+import authUserAvatarPlaceholder from '../../img/user_avatar_placeholder.png';
 
 
 const MainHeader = (props) => {
