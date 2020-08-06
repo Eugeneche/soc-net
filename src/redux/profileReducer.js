@@ -1,3 +1,5 @@
+import { usersAPI } from "../API/API";
+
 const ADD_POST = 'ADD-POST';
 const CHANGE_POST = 'CHANGE-POST';
 const GET_USER_PROFILE = 'GET-USER-PROFILE';
@@ -42,5 +44,14 @@ const profileReducer = (state = initialState, action) => {
 export const addPostActionCreator = () => ({ type: ADD_POST });
 export const changePostActionCreator = (text) => ({ type: CHANGE_POST, text });
 export const getUserProfile = (userProfile) => ({ type: GET_USER_PROFILE, userProfile });
+
+/* thunk */
+
+export const getProfile = (userId) => {
+  return (dispatch) => {
+    usersAPI.getProfile(userId) 
+    .then(response => dispatch(getUserProfile(response.data)));
+  }
+}
 
 export default profileReducer;

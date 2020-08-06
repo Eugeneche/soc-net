@@ -1,3 +1,5 @@
+import { usersAPI } from "../API/API";
+
 const SET_AUTH_USER_DATA = 'SET-AUTH-USER-DATA';
 const SET_AUTH_USER_AVATAR = 'SET-AUTH-USER-AVATAR';
 
@@ -33,6 +35,29 @@ const authReducer = (state = initialState, action) => {
 
 export const setAuthUserData = (userId, login, email) => ({type: SET_AUTH_USER_DATA, data: {userId, login, email}});
 export const setAuthUserAvatar = (authUserAvatar) => ({type: SET_AUTH_USER_AVATAR, authUserAvatar});
-//export const toggleIsFetching = (isFetching) => ({type: TOGGLE_IS_FETCHING, isFetching}); 
+
+/* thunks */
+
+export const setAuthMeData = () => {
+    return (dispatch) => {
+        usersAPI.getAuthMeData()
+        .then(response => {
+            if(response.data.resultCode === 0) {  
+                let {id, login, email} = response.data.data;
+                dispatch(setAuthUserData(id, login, email));
+            }          
+        });
+    }
+}
+
+export const getProfile = (id) => {
+    return (dispatch) => {
+        usersAPI.getProfile(id)
+        .then(response => {
+            let authUserAvatar = response.data.photos.small;
+            dispatch(setAuthUserAvatar(authUserAvatar));
+        });
+    }
+}
 
 export default authReducer;

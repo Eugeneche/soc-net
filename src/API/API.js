@@ -21,7 +21,7 @@ export const usersAPI = {
         .then(response => response.data)
     },
 
-    /* MainHeaderContainer, ProfileContainer - to get certain user propfile */
+    /* MainHeaderContainer, ProfileContainer - to get certain user profile */
     getProfile(userId) {
         return instance.get(`profile/${userId}`)
         /* .then(response => response.data) */

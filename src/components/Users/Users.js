@@ -2,18 +2,10 @@ import React from 'react';
 import styles from './Users.module.css';
 import userAvatarPlaceholder from '../../img/user_avatar_placeholder.png';
 import { NavLink } from 'react-router-dom';
+import Paginator from './Paginator/Paginator';
+//import { setCurrentPage } from '../../redux/usersReducer';
 
 const Users = (props) => {
-
-    let pages = [];
-    let pagesCount = Math.ceil(props.totalUsersCount / props.pageSize);
-    for(let i = 1; i <= pagesCount; i++) {
-        pages.push(i);
-    }
-    let pagesPagination = pages.map(page => {
-        return <span key={page} className={page === props.currentPage ? styles.selected : ''} 
-        onClick={ (e) => props.getCurrentUsers(page)}>{page}</span>
-    });
 
     let users = props.users.map(user => {
 
@@ -71,7 +63,11 @@ const Users = (props) => {
     });
 
     return <>
-        <div className={styles.pagination}>{pagesPagination}</div>
+        <Paginator 
+            totalUsersCount={props.totalUsersCount}
+            pageSize={props.pageSize}
+            currentPage={props.currentPage}
+            getCurrentUsers={props.getCurrentUsers} />
         <div className={styles.users}>{users}</div>
     </>
 }

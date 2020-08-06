@@ -11,13 +11,13 @@ import { usersAPI } from '../../../API/API';
 const ProfileHeader = (props) => {
 
     usersAPI.getAuthMeData();
-    
+
     if(!props.profile) {
         return <Preloader />
     }
     return <>
         <div className={styles.profileCover}>
-            <img src={profileSheet} alt="czech" />
+            <img src={profileSheet} alt="profile" />
             <img className={styles.profilePhoto} src={!props.profile.photos.small ? userAvatarPlaceholder : props.profile.photos.small} alt={'user ' + props.profile.userId + ' photo'} />
         </div>
 
