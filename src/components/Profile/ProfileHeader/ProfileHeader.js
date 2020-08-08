@@ -5,12 +5,9 @@ import looking from '../../../img/looking_job.svg';
 import notLooking from '../../../img/not_looking_job.svg';
 import userAvatarPlaceholder from '../../../img/user_avatar_placeholder.png';
 import profileSheet from '../../../img/profile.jpg';
-import { usersAPI } from '../../../API/API';
 
 
 const ProfileHeader = (props) => {
-
-    usersAPI.getAuthMeData();
 
     if(!props.profile) {
         return <Preloader />

@@ -12,7 +12,7 @@ const renderAll = (state) => {
 
     ReactDOM.render(
       <React.StrictMode>
-        <BrowserRouter basename="/soc-net">
+        <BrowserRouter>
           <Provider store={store}>
             <App />
           </Provider>

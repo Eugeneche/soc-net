@@ -10,6 +10,7 @@
     max-height: 150px;
     display: block;
     margin-bottom: 12px;
+    outline: none;
 }
 
 .addPost button {

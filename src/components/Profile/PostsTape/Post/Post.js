@@ -1,11 +1,12 @@
 import React from 'react';
 import s from'./Post.module.css';
+import userAvatarPlaceholder from '../../../../img/user_avatar_placeholder.png';
 
 const Post = (props) => {
 
     return <div className={s.postBlock}>
             <div className={s.ava}>
-                <img src="https://cdn2.iconfinder.com/data/icons/proxima-2/256/user.png" alt="user avatar" />
+                <img src={userAvatarPlaceholder} alt="user avatar" />
                 <span className={s.likes}>Likes: {props.likes}</span>
             </div>
             <div className={s.post}>

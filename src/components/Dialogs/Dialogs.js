@@ -2,6 +2,7 @@ import React from 'react';
 import s from './Dialogs.module.css';
 import UserBlock from './UserBlock/UserBlock';
 import MessageBlock from './MessageBlock/MessageBlock';
+//import { Redirect } from 'react-router-dom';
 
 
 const Dialogs = (props) => { 
@@ -15,24 +16,28 @@ const Dialogs = (props) => {
         props.changeMessage(writingText);
     }
 
-    return(
-        <div className={s.dialogs}>
-            <div className={s.usersColumn}>
+    return <>
+{/*         {!props.isAuth
+            ? <Redirect to='/login' />
+            
+            : */} <div className={s.dialogs}>
+                <div className={s.usersColumn}>
 
-                {props.users.map(user => <UserBlock key={user.id} id={user.id} name={user.name} />)}
+                    {props.users.map(user => <UserBlock key={user.id} id={user.id} name={user.name} />)}
 
-            </div>
-            <div className={s.messagesColumn}>
-                <div className={s.addMessage}>
-                    <textarea onChange={onChangeMessage} className={s.postField} value={props.writingMessageText} placeholder=" write your message here" />
-                    <button onClick={onAddMessage}>Send message</button>
                 </div>
+                <div className={s.messagesColumn}>
+                    <div className={s.addMessage}>
+                        <textarea onChange={onChangeMessage} className={s.postField} value={props.writingMessageText} autoFocus placeholder=" write your message here" />
+                        <button onClick={onAddMessage}>Send message</button>
+                    </div>
 
-                {props.messages.map(mes => <MessageBlock key={mes.id} autor={mes.autor} message={mes.message} />)}
+                    {props.messages.map(mes => <MessageBlock key={mes.id} autor={mes.autor} message={mes.message} />)}
 
-            </div>
-        </div>
-    )
+                </div>
+            </div>{/* } */}
+
+   </>
 }
 
 export default Dialogs;

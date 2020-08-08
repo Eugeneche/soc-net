@@ -14,7 +14,7 @@ const PostsTape = (props) => {
 
     return <>
             <div className={s.addPost}>
-                <textarea onChange={changePostText} value={props.writingPostText} placeholder=" create your new post" />
+                <textarea onChange={changePostText} value={props.writingPostText} placeholder=" create your new post" autoFocus />
                 <button onClick={onAddPost}>Add post</button>
             </div>
 

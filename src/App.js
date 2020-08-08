@@ -6,14 +6,12 @@ import SidebarContainer from './components/Sidebar/SidebarContainer';
 import ProfileContainer from './components/Profile/ProfileContainer';
 import DialogsContainer from './components/Dialogs/DialogsContainer';
 import UsersContainer from './components/Users/UsersContainer';
-import News from './components/News/News';
-import Settings from './components/Settings/Settings';
-import Music from './components/Music/Music';
+import NewsContainer from './components/News/NewsContainer';
 import MainHeaderContainer from './components/MainHeader/MainHeaderContainer';
 import Main from './components/Main/Main';
-//import Login from './components/Login/Login';
-
-
+import Login from './components/Login/Login';
+import MusicContainer from './components/Music/MusicContainer';
+import SettingsContainer from './components/Settings/SettingsContainer';
 
 
 function App(props) {
@@ -31,9 +29,10 @@ function App(props) {
  
           <Route exact path='/dialogs' render={ () => <DialogsContainer />} />
 
-          <Route path='/news' render={ () => <News />} />
-          <Route path='/music' render={ () => <Music />} />
-          <Route path='/settings' render={ () => <Settings />} />
+          <Route path='/news' render={ () => <NewsContainer />} />
+          <Route path='/music' render={ () => <MusicContainer />} />
+          <Route path='/settings' render={ () => <SettingsContainer />} />
+          <Route path='/login' render={ () => <Login /> } />
 
         </div> 
       </div>

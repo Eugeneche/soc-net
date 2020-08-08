@@ -1,14 +1,16 @@
 import React from 'react';
+import { Redirect } from 'react-router-dom';
 //import s from './Music.module.css';
 
 
-class Music extends React.Component {
-
-    render() {
-        return(
-            <div>Music</div>
-        )
-    }
+const Music = (props) => {
+debugger;
+    return <>
+        {!props.isAuth 
+            ? <Redirect to='/login' /> 
+            :  <div>Music</div>}       
+    </>
+        
 }
 
 export default Music;

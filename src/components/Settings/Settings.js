@@ -1,14 +1,14 @@
 import React from 'react';
+import { Redirect } from 'react-router-dom';
 
 
-class Settings extends React.Component {
+const Settings = (props) => {
 
-    render() {
-
-        return(
-            <div>Settings</div>
-        )
-    }
+    return <>
+        {!props.isAuth
+            ? <Redirect to='/login' />
+            : <div>Settings</div>}
+    </>        
 }
 
 export default Settings;

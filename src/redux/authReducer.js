@@ -1,4 +1,4 @@
-import { usersAPI } from "../API/API";
+import { usersAPI, authAPI } from "../API/API";
 
 const SET_AUTH_USER_DATA = 'SET-AUTH-USER-DATA';
 const SET_AUTH_USER_AVATAR = 'SET-AUTH-USER-AVATAR';
@@ -40,7 +40,7 @@ export const setAuthUserAvatar = (authUserAvatar) => ({type: SET_AUTH_USER_AVATA
 
 export const setAuthMeData = () => {
     return (dispatch) => {
-        usersAPI.getAuthMeData()
+        authAPI.getAuthMeData()
         .then(response => {
             if(response.data.resultCode === 0) {  
                 let {id, login, email} = response.data.data;
