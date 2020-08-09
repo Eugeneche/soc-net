@@ -1,9 +1,15 @@
+import React from 'react';
 import { connect } from 'react-redux';
 import News from './News';
+import { withAuthRedirect } from '../../hoc/withAuthRedirect';
 
+const NewsContainer = (props) => {
 
-const mapDispatchToProps = (state) => ({isAuth: state.auth.isAuth});
+    return <News />
+}
 
-const NewsContainer = connect(mapDispatchToProps, {})(News);
+const AuthRedirectComponent = withAuthRedirect(NewsContainer);
 
-export default NewsContainer;
+//const mapDispatchToProps = (state) => ({ });
+
+export default connect(null, {})(AuthRedirectComponent);

@@ -1,9 +1,15 @@
+import React from 'react';
 import { connect } from 'react-redux';
 import Settings from './Settings';
+import { withAuthRedirect } from '../../hoc/withAuthRedirect';
 
+const SettingsContainer = (props) => {
 
-const mapDispatchToProps = (state) => ({isAuth: state.auth.isAuth});
+    return <Settings />
+}
 
-const SettingsContainer = connect(mapDispatchToProps, {})(Settings);
+const AuthRedirectComponent = withAuthRedirect(SettingsContainer);
 
-export default SettingsContainer;
+//const mapDispatchToProps = (state) => ({ });
+
+export default connect(null, {})(AuthRedirectComponent);

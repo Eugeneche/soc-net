@@ -1,14 +1,15 @@
+import React from 'react';
 import { connect } from 'react-redux';
 import Music from './Music';
+import { withAuthRedirect } from '../../hoc/withAuthRedirect';
 
+const MusicContainer = (props) => {
 
-let mapStateToProps = (state) => {
-debugger;
-    return {
-        isAuth: state.auth.isAuth 
-    }
+    return <Music />
 }
 
-const MusicContainer = connect(mapStateToProps, null)(Music);
+const AuthRedirectContainer = withAuthRedirect(MusicContainer);
 
-export default MusicContainer;
+//let mapStateToProps = (state) => ({ });
+
+export default connect(null, {})(AuthRedirectContainer);
