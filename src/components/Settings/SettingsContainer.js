@@ -2,14 +2,17 @@ import React from 'react';
 import { connect } from 'react-redux';
 import Settings from './Settings';
 import { withAuthRedirect } from '../../hoc/withAuthRedirect';
+import { compose } from 'redux';
 
 const SettingsContainer = (props) => {
 
     return <Settings />
 }
 
-const AuthRedirectComponent = withAuthRedirect(SettingsContainer);
+export default compose( connect(), withAuthRedirect )(SettingsContainer);
+
+//const AuthRedirectComponent = withAuthRedirect(SettingsContainer);
 
 //const mapDispatchToProps = (state) => ({ });
 
-export default connect(null, {})(AuthRedirectComponent);
+//export default connect(null, {})(AuthRedirectComponent);
