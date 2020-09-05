@@ -16,12 +16,6 @@ export const usersAPI = {
         .then(response => response.data)
     },
 
-    /* MainHeaderContainer, ProfileContainer - to get certain user profile */
-    getProfile(userId) {
-        return instance.get(`profile/${userId}`)
-        /* .then(response => response.data) */
-    },
-
     /* Users - to follow certain user */
     follow(userId) {
         return instance.post(`follow/${userId}`)
@@ -30,6 +24,23 @@ export const usersAPI = {
     /* Users - to follow certain user */
     unfollow(userId) {
         return instance.delete(`follow/${userId}`)
+    }
+}
+
+export const profileAPI = {
+    
+    /* MainHeaderContainer, ProfileContainer - to get certain user profile */
+    getProfile(userId) {
+        return instance.get(`profile/${userId}`);
+        /* .then(response => response.data) */
+    },
+
+    getStatus(userId) {
+        return instance.get(`/profile/status/${userId}`);
+    },
+
+    updateStatus(status) {
+        return instance.put(`/profile/status`, {status});
     }
 }
 

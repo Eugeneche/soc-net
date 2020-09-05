@@ -1,15 +1,13 @@
 import React from 'react';
 import ProfileHeader from './ProfileHeader/ProfileHeader';
 import PostsTapeContainer from './PostsTape/PostsTapeContainer';
-import ProfileStatus from './ProfileStatus';
 
 const Profile = (props) => {
         return <>
                 <header>
-                    <ProfileHeader profile={props.profile} />
+                    <ProfileHeader profile={props.profile} status={props.status} updateStatus={props.updateStatus} />
                 </header>
-                <main>
-                    <ProfileStatus />
+                <main>                   
                     <PostsTapeContainer />  
                 </main>             
             </>  

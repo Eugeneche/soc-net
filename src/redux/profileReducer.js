@@ -1,8 +1,9 @@
-import { usersAPI } from "../API/API";
+import { profileAPI } from "../API/API";
 
 const ADD_POST = 'ADD-POST';
 const CHANGE_POST = 'CHANGE-POST';
 const GET_USER_PROFILE = 'GET-USER-PROFILE';
+const SET_USER_STATUS = 'SET-USER-STATUS';
 
 let initialState = {
   posts: [
@@ -10,7 +11,8 @@ let initialState = {
     {id: 2, postText: 'It\'s my new post.', likesCount: 25765},
   ],
   writingPostText: '',
-  userProfile: null
+  userProfile: null,
+  status: ''
 }
 
 const profileReducer = (state = initialState, action) => {
@@ -34,6 +36,11 @@ const profileReducer = (state = initialState, action) => {
         return {
           ...state, userProfile: action.userProfile
         }
+
+      case SET_USER_STATUS:
+        return {
+          ...state, status: action.status
+        }
       
       default: 
         return state;
@@ -44,14 +51,31 @@ const profileReducer = (state = initialState, action) => {
 export const addPostActionCreator = () => ({ type: ADD_POST });
 export const changePostActionCreator = (text) => ({ type: CHANGE_POST, text });
 export const getUserProfile = (userProfile) => ({ type: GET_USER_PROFILE, userProfile });
+export const setUserStatus = (status) => ({ type: SET_USER_STATUS, status });
 
 /* thunk */
 
 export const getProfile = (userId) => {
   return (dispatch) => {
-    usersAPI.getProfile(userId) 
+    profileAPI.getProfile(userId) 
     .then(response => dispatch(getUserProfile(response.data)));
   }
 }
+
+export const getStatus = (userId) => {
+  return (dispatch) => {
+    profileAPI.getStatus(userId)
+    .then(response => dispatch(setUserStatus(response.data)));
+  }
+}
+/* 2-nd way to write arrow function without return */
+export const updateStatus = (status) => (dispatch) => {
+    profileAPI.updateStatus(status)
+    .then(response => {
+      if(response.data.resultCode === 0) {
+        dispatch(setUserStatus(status));
+      }
+    })
+  }
 
 export default profileReducer;
