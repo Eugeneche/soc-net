@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "0ffdc98f6295efd4691124159cfeb1f9",
+    "revision": "a9e190c008e60d3ca14b9b612c691f0a",
     "url": "/soc-net/index.html"
   },
   {
-    "revision": "6956a37c6da2af787c63",
-    "url": "/soc-net/static/css/main.c2dc8c41.chunk.css"
+    "revision": "42631a7394a09f8f9064",
+    "url": "/soc-net/static/css/main.5d045653.chunk.css"
   },
   {
-    "revision": "7454e7fc353a9e9364e4",
-    "url": "/soc-net/static/js/2.26690318.chunk.js"
+    "revision": "aa75bbe9eb06926cea9f",
+    "url": "/soc-net/static/js/2.220720bd.chunk.js"
   },
   {
     "revision": "c64c486544348f10a6d6c716950bc223",
-    "url": "/soc-net/static/js/2.26690318.chunk.js.LICENSE.txt"
+    "url": "/soc-net/static/js/2.220720bd.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "6956a37c6da2af787c63",
-    "url": "/soc-net/static/js/main.7cf4f703.chunk.js"
+    "revision": "42631a7394a09f8f9064",
+    "url": "/soc-net/static/js/main.527a7585.chunk.js"
   },
   {
     "revision": "997597f7e6f41d2fe53d",
