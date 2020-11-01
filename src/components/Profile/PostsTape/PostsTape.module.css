@@ -4,7 +4,7 @@
     position: relative;
 }
 
-.addPost textarea {
+.addPost input[type="textarea"] {
     width: 100%;
     max-width: 750px;
     max-height: 150px;

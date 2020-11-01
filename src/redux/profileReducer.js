@@ -7,8 +7,8 @@ const SET_USER_STATUS = 'SET-USER-STATUS';
 
 let initialState = {
   posts: [
-    {id: 1, postText: 'Hi there!', likesCount: 10},
-    {id: 2, postText: 'It\'s my new post.', likesCount: 25765},
+/*     {id: 1, postText: 'Hi there!', likesCount: 10},
+    {id: 2, postText: 'It\'s my new post.', likesCount: 25765}, */
   ],
   writingPostText: '',
   userProfile: null,

@@ -36,18 +36,22 @@ export const profileAPI = {
     },
 
     getStatus(userId) {
-        return instance.get(`/profile/status/${userId}`);
+        return instance.get(`profile/status/${userId}`);
     },
 
     updateStatus(status) {
-        return instance.put(`/profile/status`, {status});
+        return instance.put(`profile/status`, {status});
     }
 }
 
 export const authAPI = {
     /* MainHeaderContainer - to get and set authorized user data */
     getAuthMeData() {
-        return instance.get('auth/me')
-    }
-    
+        return instance.get('auth/me');
+    },
+
+    /* Login - to login if user is not authorized  */
+    sendAuthData(loginFormData) {
+        return instance.post('auth/login', {loginFormData});
+    }  
 }

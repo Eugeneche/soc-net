@@ -60,4 +60,9 @@ export const getProfile = (id) => {
     }
 }
 
+export const sendAuthUserData = (loginFormData) => {
+   
+        authAPI.sendAuthData(loginFormData);
+}
+
 export default authReducer;

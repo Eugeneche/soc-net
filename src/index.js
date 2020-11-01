@@ -11,13 +11,15 @@ import { Provider } from 'react-redux';
 const renderAll = (state) => {
 
     ReactDOM.render(
-      <React.StrictMode>
-        <BrowserRouter>
+      <BrowserRouter>
+      {/* <React.StrictMode> */}
+        
           <Provider store={store}>
             <App />
           </Provider>
-        </BrowserRouter>
-      </React.StrictMode>,
+        
+      {/* </React.StrictMode> */}
+      </BrowserRouter>,
       document.getElementById('root')
     );
   }

@@ -28,7 +28,6 @@ const Paginator = (props) => {
     });
 
     let ranges = Math.ceil(pagesCount / pagesRange);
-    console.log(ranges);
 
     return <div className={styles.pagination}>
             {currentRange > 1 && <button className={styles.paginationNav} onClick={ () => setCurrentRange(currentRange - 1)}>&#60;&#60; PREW</button>}

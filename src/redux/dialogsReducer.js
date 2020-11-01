@@ -9,10 +9,10 @@ let initialState = {
     {id: 4, name: 'George'},
   ],
   messages: [
-    {id: 1, autor: 'Tom', message: 'Hi! Are you busy today?'},
+/*     {id: 1, autor: 'Tom', message: 'Hi! Are you busy today?'},
     {id: 2, autor: 'Me', message: 'Hi! I\'ve free time in afternoon. What\'s the matter?'},
     {id: 3, autor: 'Tom', message: 'I want to talk with you.'},
-    {id: 4, autor: 'Me', message: 'OK, let\'s meet at 6 o\'clock?'},
+    {id: 4, autor: 'Me', message: 'OK, let\'s meet at 6 o\'clock?'}, */
   ],
   writingMessageText: ''
 }
