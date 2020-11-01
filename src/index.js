@@ -11,7 +11,7 @@ import { Provider } from 'react-redux';
 const renderAll = (state) => {
 
     ReactDOM.render(
-      <BrowserRouter>
+      <BrowserRouter basename="/soc-net">
       {/* <React.StrictMode> */}
         
           <Provider store={store}>
