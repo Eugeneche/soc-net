@@ -1,16 +1,14 @@
 import PostsTape from './PostsTape';
-import { addPostActionCreator, changePostActionCreator } from '../../../redux/profileReducer';
+import { addPost, changePost } from '../../../redux/profileReducer';
 import { connect } from 'react-redux';
 
 
-let mapStateToProps = (state) => {
-    return {
+let mapStateToProps = state => ({
         posts: state.profilePage.posts,
         writingPostText: state.profilePage.writingPostText
-    }
-}
+});
 
-let mapDispatchToProps = (dispatch) => {
+/* let mapDispatchToProps = (dispatch) => {
     return {
         addPost: () => {
             dispatch(addPostActionCreator());
@@ -19,8 +17,8 @@ let mapDispatchToProps = (dispatch) => {
             dispatch(changePostActionCreator(text));
         }
     }
-}
+} */
 
-const PostsTapeContainer = connect(mapStateToProps, mapDispatchToProps)(PostsTape);
+const PostsTapeContainer = connect(mapStateToProps, { addPost, changePost })(PostsTape);
 
 export default PostsTapeContainer;

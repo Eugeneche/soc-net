@@ -1,22 +1,30 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import s from './Dialogs.module.css';
 import UserBlock from './UserBlock/UserBlock';
 import MessageBlock from './MessageBlock/MessageBlock';
+import MessageForm from './MessageForm';
 //import { Redirect } from 'react-router-dom';
 
 
-const Dialogs = (props) => { 
+const Dialogs = props => { 
 
-    const onAddMessage = () => {        
+    const submit = values => {
+        props.changeMessage(values.messageText);
+        props.addMessage();
+        
+        console.log(values);
+      }
+
+/*     const onAddMessage = () => {        
         props.addMessage();
     }
 
     const onChangeMessage = (event) => {
         let writingText = event.target.value;
         props.changeMessage(writingText);
-    }
+    } */
 
-    return <>
+    return <Fragment>
 {/*         {!props.isAuth
             ? <Redirect to='/login' />
             
@@ -28,16 +36,19 @@ const Dialogs = (props) => {
                 </div>
                 <div className={s.messagesColumn}>
                     <div className={s.addMessage}>
-                        <textarea onChange={onChangeMessage} className={s.postField} value={props.writingMessageText} autoFocus placeholder=" write your message here" />
-                        <button onClick={onAddMessage}>Send message</button>
+                        <MessageForm onSubmit={submit} />
+
+                        {/* <textarea onChange={onChangeMessage} className={s.postField} value={props.writingMessageText} autoFocus placeholder=" write your message here" />
+                        <button onClick={onAddMessage}>Send message</button> */}
                     </div>
 
                     {props.messages.map(mes => <MessageBlock key={mes.id} autor={mes.autor} message={mes.message} />)}
 
                 </div>
-            </div>{/* } */}
+            </div>  
+        {/* } */}
 
-   </>
+   </Fragment>
 }
 
 export default Dialogs;

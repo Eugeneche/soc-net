@@ -23,10 +23,11 @@ const dialogsReducer = (state = initialState, action) => {
       case ADD_MESSAGE: 
 
         let newMessage = state.writingMessageText;
+        let id = new Date().valueOf();
 
         return {
           ...state,
-          messages: [...state.messages, {id: 5, autor: 'Me', message: newMessage},],
+          messages: [...state.messages, {id: id, autor: 'Me', message: newMessage},],
           writingMessageText: ''
         }
 

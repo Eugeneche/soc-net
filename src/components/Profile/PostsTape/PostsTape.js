@@ -5,7 +5,6 @@ import Post from './Post/Post';
 import { Field, reduxForm } from 'redux-form';
 
 let PostForm = props => {
-    console.log('rere');
     const { handleSubmit } = props;
     return <form onSubmit={handleSubmit}>
         <Field name="post" component="input" type="textarea" placeholder=" create your new post" autoFocus />
@@ -17,11 +16,8 @@ PostForm = reduxForm({ form: 'post' })(PostForm);
 
 const PostsTape = props => {
     let onSubmit = postText => {
-        props.addPost();
-        const changePostText = () => {
-        
-        props.changePostText(postText);
-    }
+        props.changePost(postText.post);
+        props.addPost();     
     }
 /*     const onAddPost = () => {
         props.addPost();
